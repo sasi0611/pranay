@@ -16,6 +16,3 @@ jobs:
 
       - name: Run the docker image
         uses: docker run --name mynginx3 -p 80:80 -d nginx_pranay
-
-   
-          

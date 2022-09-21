@@ -18,7 +18,7 @@ jobs:
         uses: docker run --name mynginx3 -p 80:80 -d nginx_pranay
         
       - name: Deploy to my EC2 instance
-        uses: sasi0611/pranay@main
+        uses: easingthemes/ssh-deploy@v2.1.5
         env:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           SOURCE: "./"

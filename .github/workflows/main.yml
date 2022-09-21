@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-      - uses: actions/checkout@v1
+        uses: actions/checkout@v1
 
       - name: Build the docker image
         uses: docker build -t nginx_pranay .

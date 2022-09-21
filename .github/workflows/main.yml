@@ -17,11 +17,5 @@ jobs:
       - name: Run the docker image
         uses: docker run --name mynginx3 -p 80:80 -d nginx_pranay
 
-      - name: Deploy to my EC2 instance
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          SOURCE: "./"
-          REMOTE_HOST: "ec2-100-26-208-25.compute-1.amazonaws.com"
-          REMOTE_USER: "ec2-user"
+   
           
